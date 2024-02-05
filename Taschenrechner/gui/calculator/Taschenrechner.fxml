@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="calculator" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.calculator.Calculator">
+   <children>
+      <TextField id="textfield" editable="false" layoutX="7.0" layoutY="8.0" prefHeight="166.0" prefWidth="338.0" />
+      <ButtonBar layoutY="340.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button id="1" mnemonicParsing="false" onAction="#handleEvent" text="1" />
+            <Button id="2" mnemonicParsing="false" onAction="#handleEvent" text="2" />
+            <Button id="3" mnemonicParsing="false" onAction="#handleEvent" text="3" />
+        </buttons>
+      </ButtonBar>
+      <ButtonBar layoutY="300.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button id="4" mnemonicParsing="false" onAction="#handleEvent" text="4" />
+            <Button id="5" mnemonicParsing="false" onAction="#handleEvent" text="5" />
+            <Button id="6" mnemonicParsing="false" onAction="#handleEvent" text="6" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutY="260.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button id="7" mnemonicParsing="false" onAction="#handleEvent" text="7" />
+            <Button id="8" mnemonicParsing="false" onAction="#handleEvent" text="8" />
+            <Button id="9" mnemonicParsing="false" onAction="#handleEvent" text="9" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="-10.0" layoutY="180.0" prefHeight="40.0" prefWidth="274.0">
+         <buttons>
+            <Button id="." mnemonicParsing="false" onAction="#handleEvent" text="." />
+            <Button id="(" mnemonicParsing="false" onAction="#handleEvent" text="(" />
+            <Button id="/" mnemonicParsing="false" onAction="#handleEvent" text=")" />
+            <Button id="DELETE" mnemonicParsing="false" onAction="#handleEvent" prefHeight="29.0" prefWidth="64.0" text="DELETE" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="-10.0" layoutY="220.0" prefHeight="40.0" prefWidth="274.0">
+         <buttons>
+            <Button id="+" mnemonicParsing="false" onAction="#handleEvent" text="+" />
+            <Button id="-" mnemonicParsing="false" onAction="#handleEvent" text="-" />
+            <Button id="*" mnemonicParsing="false" onAction="#handleEvent" text="*" />
+            <Button id="/" mnemonicParsing="false" onAction="#handleEvent" text="/" />
+         </buttons>
+      </ButtonBar>
+      <Button id="=" layoutX="274.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleEvent" prefHeight="56.0" prefWidth="64.0" text="=" />
+    <Button id="CLEAR" layoutX="274.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleEvent" prefHeight="58.0" prefWidth="64.0" text="CLEAR" />
+      <ButtonBar layoutX="14.0" layoutY="380.0" prefHeight="40.0" prefWidth="254.0">
+        <buttons>
+          <Button id="O" mnemonicParsing="false" onAction="#handleEvent" text="0" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</Pane>
